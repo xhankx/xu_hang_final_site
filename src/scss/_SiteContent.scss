@@ -1,0 +1,14 @@
+.site-content {
+  padding: 0 10%;
+  padding-top: 40px;
+  .anchor-offset {
+    display: block;
+    height: 80px;
+    margin-top: -70px;
+    visibility: hidden;
+  }
+  @media (max-width: 768px) {
+    padding: 0 2%; // reduced horizontal padding
+    padding-top: 40px; // reduced top padding
+  }
+}

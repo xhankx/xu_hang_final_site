@@ -1,0 +1,25 @@
+.MuiCard-root {
+  box-shadow: none !important;
+  border-radius: none !important;
+}
+
+.row {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1%;
+  }
+  .col-md-6 {
+    justify-items: center;
+    @media (max-width: 768px) {
+      width: 100%; // full width on mobile
+    }
+  }
+}
