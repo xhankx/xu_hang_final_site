@@ -15,7 +15,7 @@ const ContactForm: React.FC = () => {
   };
 
   const handleFormSubmit = () => {
-    const mailtoLink = `mailto:supriyathukral@hotmail.com?subject=${formData.name}&body=${formData.message}`;
+    const mailtoLink = `mailto:hxu7@academic.rrc.ca?subject=${formData.name}&body=${formData.message}`;
     window.location.href = mailtoLink;
   };
 
