@@ -1,24 +1,18 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar/Navbar';
-import Home from './pages/Home';
-import AboutPage from './pages/AboutPage';
-import ProjectsPage from './pages/ProjectsPage';
-import SkillsPage from './pages/SkillsPage';
-import ContactPage from './pages/ContactPage';
+import styles from "./App.module.css";
+import { About } from "./components/About/About";
+import { Contact } from "./components/Contact/Contact";
+import { Navbar } from "./components/Navbar/Navbar";
+import { Projects } from "./components/Projects/Projects";
 
 function App() {
   return (
-    <Router>
+    <div className={styles.App}>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/projects" element={<ProjectsPage />} />
-        <Route path="/skills" element={<SkillsPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-      </Routes>
-    </Router>
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
+    </div>
   );
 }
 
