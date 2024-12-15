@@ -10,14 +10,14 @@ const projectsData = [
     title: "Portfolio Website",
     link: "https://github.com/supriya-thukral/supriya-thukral.github.io",
     description:
-      "This is the site you are looking at! My personal portfolio website that showcases my skills, projects, and experiences. It is built using React, TypeScript, and SCSS, and it features a modern and responsive design. The source code for this website is available on GitHub, and you can view the live website by clicking the link above. I used GitHub Actions to set up the site.",
+      "I built my personal website using HTML5, CSS3, and JavaScript for a clean and modern design, with SCSS for responsive styling. Using React, I created reusable components for a dynamic experience, enhanced by React Bootstrap, Material UI, and Font Awesome. The site is deployed on GitHub Pages with an automated deployment pipeline.",
   },
   {
     icon: faLaptopCode,
-    title: "Hack Western Project - CovWe",
-    link: "https://devpost.com/software/covwe",
+    title: "WEBD-1008 Portfolio Website",
+    link: "http://hankxu.liveblog365.com/index.html",
     description:
-      "CovWe is a health-focused web app that was pitched and built as a first-time project submission to Hack Western. The app is built using Node.js with a Model-View-Controller (MVC) design pattern, utilizing HTML, CSS (and Pug), and JavaScript (Node.js). CovWe aims to provide users with valuable health information and resources to promote a healthier lifestyle.",
+      "I built this project using HTML5, CSS, and JavaScript to ensure a responsive, accessible, and user-friendly design. Inline validation for forms was implemented using JavaScript and Regular Expressions, while a common header, navigation bar, and footer across all pages provide a cohesive and professional layout. The website is fully hosted online using free web hosting services, making it accessible on the World Wide Web.",
   },
   {
     icon: faCodeBranch,
