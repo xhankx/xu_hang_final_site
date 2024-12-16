@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
-import logo from "../Assets/Images/Logo.png";
-import { pagesContent } from "../Pages/PagesContent";
+import React, { useEffect, useState } from 'react';
+import logo from '../Assets/Images/Logo.png';
+import { pagesContent } from '../Pages/PagesContent';
 
 // Extract sections from the pagesContent object
 const sections = Object.keys(pagesContent).map((key) => {
@@ -17,7 +17,7 @@ const sections = Object.keys(pagesContent).map((key) => {
  */
 const TopNav: React.FC = () => {
   // State to track the active section
-  const [activeSection, setActiveSection] = useState("");
+  const [activeSection, setActiveSection] = useState('');
 
   // useEffect to update the active section on scroll
   useEffect(() => {
@@ -33,21 +33,21 @@ const TopNav: React.FC = () => {
 
       // Sort sections based on their positions
       const sortedSections = sectionPositions.sort(
-        (a, b) => Math.abs(a.position) - Math.abs(b.position)
+        (a, b) => Math.abs(a.position) - Math.abs(b.position),
       );
 
       // Set the active section based on the closest one to the top
-      const active = sortedSections.length > 0 ? sortedSections[0].id : "";
+      const active = sortedSections.length > 0 ? sortedSections[0].id : '';
       setActiveSection(active);
     };
 
     // Add scroll event listener and call handleScroll on mount
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
     handleScroll();
 
     // Clean up the event listener when component unmounts
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -61,7 +61,7 @@ const TopNav: React.FC = () => {
         <div className="top-nav-item" key={section.id}>
           <a
             href={`#${section.id}`}
-            className={section.id === activeSection ? "active" : ""}
+            className={section.id === activeSection ? 'active' : ''}
           >
             {section.text}
           </a>

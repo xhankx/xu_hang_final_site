@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React, { ReactNode } from 'react';
 
 interface PageWithChildrenProps {
   /**
@@ -31,7 +31,7 @@ const PageWithChildren: React.FC<PageWithChildrenProps> = ({
   id,
 }) => {
   return (
-    <div className={"page " + className} id={id}>
+    <div className={'page ' + className} id={id}>
       <div className="anchor-offset" />
       {children}
     </div>

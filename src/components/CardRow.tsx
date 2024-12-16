@@ -1,13 +1,13 @@
-import React, { ReactNode } from "react";
-import { ImageProps } from "./Page";
-import { Card } from "@mui/material";
+import React, { ReactNode } from 'react';
+import { ImageProps } from './Page';
+import { Card } from '@mui/material';
 
 interface CardProps {
   title?: string;
   className?: string;
   image?: ImageProps;
   children?: ReactNode;
-  imageLocation?: "left" | "right";
+  imageLocation?: 'left' | 'right';
 }
 
 /**
@@ -22,7 +22,7 @@ const CardComponent: React.FC<CardProps> = ({
   className,
   image,
   children,
-  imageLocation = "left",
+  imageLocation = 'left',
 }) => {
   const imageElement = image && (
     <div className="col-md-6 d-flex align-items-center justify-content-center">
@@ -42,9 +42,9 @@ const CardComponent: React.FC<CardProps> = ({
   return (
     <Card className={className}>
       <div className="row">
-        {imageLocation === "left" && imageElement}
+        {imageLocation === 'left' && imageElement}
         {contentElement}
-        {imageLocation === "right" && imageElement}
+        {imageLocation === 'right' && imageElement}
       </div>
     </Card>
   );

@@ -1,9 +1,9 @@
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
-import { faLink } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Badge, CardContent, CardHeader } from "@mui/material";
-import React from "react";
-import { Card } from "react-bootstrap";
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
+import { faLink } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Badge, CardContent, CardHeader } from '@mui/material';
+import React from 'react';
+import { Card } from 'react-bootstrap';
 
 /**
  * ProjectCard Component
@@ -24,17 +24,17 @@ interface ProjectCardProps {
 }
 
 const boldKeywords = [
-  "React",
-  "TypeScript",
-  "SCSS",
-  "Node.js",
-  "GitHub",
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "Web App",
-  "Open Source",
-  "MVC",
+  'React',
+  'TypeScript',
+  'SCSS',
+  'Node.js',
+  'GitHub',
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'Web App',
+  'Open Source',
+  'MVC',
 ];
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -46,12 +46,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   // Function to bold specific keywords in the description
   const boldDescription = () => {
-    const words = description.split(" ");
+    const words = description.split(' ');
     return words.map((word) => {
       const isKeyword = boldKeywords.some((keyword) =>
-        word.toLowerCase().includes(keyword.toLowerCase())
+        word.toLowerCase().includes(keyword.toLowerCase()),
       );
-      return isKeyword ? <b>{word} </b> : word + " ";
+      return isKeyword ? <b>{word} </b> : word + ' ';
     });
   };
 

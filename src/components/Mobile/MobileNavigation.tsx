@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { pagesContent } from "../../Pages/PagesContent";
+import React, { useState, useEffect } from 'react';
+import { pagesContent } from '../../Pages/PagesContent';
 
 const sections = Object.keys(pagesContent).map((key) => {
   return {
@@ -13,9 +13,9 @@ const MobileNavigation: React.FC = () => {
 
   useEffect(() => {
     if (isMenuOpen) {
-      document.body.classList.add("menu-open");
+      document.body.classList.add('menu-open');
     } else {
-      document.body.classList.remove("menu-open");
+      document.body.classList.remove('menu-open');
     }
   }, [isMenuOpen]);
 
@@ -25,7 +25,7 @@ const MobileNavigation: React.FC = () => {
         className="menu-button"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
-        {isMenuOpen ? "✕" : "☰"}
+        {isMenuOpen ? '✕' : '☰'}
       </button>
       {isMenuOpen && (
         <div className="mobile-menu">

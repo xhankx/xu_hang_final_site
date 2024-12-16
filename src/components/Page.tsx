@@ -1,6 +1,5 @@
-import React from "react";
-import CardComponent from "./CardRow";
-
+import React from 'react';
+import CardComponent from './CardRow';
 
 export interface ImageProps {
   src: string;

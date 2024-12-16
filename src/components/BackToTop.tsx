@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useRef } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
+import React, { useState, useEffect, useRef } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleUp } from '@fortawesome/free-solid-svg-icons';
 
 /**
  * BackToTopButton Component
@@ -32,17 +32,17 @@ const BackToTopButton: React.FC = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   };
 
   useEffect(() => {
     // Add scroll event listener to handle showing and hiding the button
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
     // Clean up the event listener when component unmounts
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -68,17 +68,17 @@ const BackToTopButton: React.FC = () => {
       onMouseLeave={handleMouseLeave}
       style={{
         // Show the button when the user has scrolled down or hover over the button
-        display: showButton ? "block" : "none",
-        position: "fixed",
-        bottom: "30px",
-        right: "30px",
-        background: "transparent",
-        border: "none",
-        cursor: "pointer",
-        fontSize: "48px",
-        color: hover ? "#555" : "#333",
+        display: showButton ? 'block' : 'none',
+        position: 'fixed',
+        bottom: '30px',
+        right: '30px',
+        background: 'transparent',
+        border: 'none',
+        cursor: 'pointer',
+        fontSize: '48px',
+        color: hover ? '#555' : '#333',
         zIndex: 9999,
-        transition: "opacity 0.3s",
+        transition: 'opacity 0.3s',
         // Gradual opacity change based on scroll position
         opacity: showButton || prevScrollY.current > 100 ? 1 : 0,
       }}

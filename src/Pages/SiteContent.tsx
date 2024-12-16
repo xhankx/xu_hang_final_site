@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
-import { pagesContent } from "./PagesContent";
-import Footer from "../Components/Footer";
-import BackToTopButton from "../Components/BackToTop";
+import { pagesContent } from './PagesContent';
+import Footer from '../Components/Footer';
+import BackToTopButton from '../Components/BackToTop';
 
 const SiteContent: React.FC = () => {
   const location = useLocation();
@@ -11,7 +11,7 @@ const SiteContent: React.FC = () => {
   useEffect(() => {
     const currentPath = location.pathname;
     const element = document.getElementById(currentPath.slice(1));
-    element?.scrollIntoView({ behavior: "smooth" });
+    element?.scrollIntoView({ behavior: 'smooth' });
   }, [location]);
 
   return (
