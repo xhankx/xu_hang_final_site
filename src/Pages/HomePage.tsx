@@ -27,19 +27,19 @@ const HomePage: React.FC = () => {
         {/* Content inside the CardComponent */}
         <div>
           <p>
-            Hi, I'm Hank Xu – a passionate full-stack web development student at
-            Red River College. I specialize in creating modern, intuitive, and
-            engaging tech websites and digital products.
+            Hi, I&apos;m Hank Xu &ndash; a passionate full-stack web development
+            student at Red River College. I specialize in creating modern,
+            intuitive, and engaging tech websites and digital products.
           </p>
           <p>
-            Since 2023, I’ve dedicated myself to turning complex technical
+            Since 2023, I&apos;ve dedicated myself to turning complex technical
             challenges into beautifully crafted solutions. I thrive on designing
             sleek, user-friendly interfaces while focusing on functionality and
             performance.
           </p>
           <p>
-            Feel free to explore my work and get in touch if you'd like to chat
-            about tech, design, or life in general.
+            Feel free to explore my work and get in touch if you&apos;d like to
+            chat about tech, design, or life in general.
           </p>
         </div>
       </CardComponent>

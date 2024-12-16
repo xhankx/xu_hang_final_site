@@ -32,8 +32,8 @@ const ExperiencePage: React.FC = () => {
           effectively.
         </h3>
         <p>
-          "At Xhank, we don’t just build websites – we create experiences that
-          inspire, engage, and leave a lasting impact."
+          &quot;At Xhank, we don&apos;t just build websites &ndash; we create
+          experiences that inspire, engage, and leave a lasting impact&quot;.
         </p>
       </CardComponent>
     </PageWithChildren>

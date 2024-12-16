@@ -8,12 +8,14 @@ export default [
   {
     files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'],
     languageOptions: {
-      globals: globals.browser,
+      globals: {
+        ...globals.browser,  // Browser globals
+        ...globals.jest,     // Jest globals
+      },
       parser: tseslint.parser,
       parserOptions: {
         ecmaVersion: 'latest',
         sourceType: 'module',
-        jest: true, // Allow Jest global variables like 'test' and 'expect'
         ecmaFeatures: { jsx: true },
       },
     },
@@ -23,7 +25,7 @@ export default [
     },
     settings: {
       react: {
-        version: 'detect', // Automatically detect the React version
+        version: 'detect',
       },
     },
     rules: {

@@ -22,13 +22,12 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.28.0",
     "react-scripts": "5.0.1",
-    "typescript": "^4.9.5",
     "web-vitals": "^2.1.4",
     "xu_hang_ui_garden_build_checks": "^1.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
-    "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx}\"",
+    "format": "prettier --write src/**/*.{ts,tsx,js,jsx}",
     "lint": "eslint src/**/*.{ts,tsx,js,jsx}",
     "test": "react-scripts test",
     "build": "react-scripts build",
@@ -69,6 +68,7 @@
     "resolve-url-loader": "^5.0.0",
     "sass": "^1.83.0",
     "ts-jest": "^29.2.5",
+    "typescript": "^4.9.5",
     "typescript-eslint": "^8.18.0"
   }
 }

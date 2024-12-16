@@ -14,11 +14,6 @@ interface PageProps {
   title: string;
 
   /**
-   * The main content of the page.
-   */
-  content: React.ReactNode;
-
-  /**
    * Additional classes for styling the page.
    */
   className?: string;
@@ -49,19 +44,16 @@ interface PageProps {
  */
 const Page: React.FC<PageProps> = ({
   title,
-  className,
+  className = '',
   image,
   children,
   href,
 }) => {
   return (
     <div className={`page ${className}`} id={href}>
-      <CardComponent
-        title={title}
-        image={image}
-        className="card"
-        children={children}
-      />
+      <CardComponent title={title} image={image} className="card">
+        {children}
+      </CardComponent>
     </div>
   );
 };
