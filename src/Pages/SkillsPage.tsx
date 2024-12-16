@@ -1,20 +1,24 @@
 import {
+  faCss,
+  faHtml5,
+  faJava,
   faJs,
   faPython,
   faReact,
   faSass,
-} from "@fortawesome/free-brands-svg-icons";
+} from '@fortawesome/free-brands-svg-icons';
 import {
-  faCodeBranch,
+  faC,
+  faCartPlus,
   faDatabase,
   faFileCode,
   faPalette,
   faServer,
   faVial,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
-import PageWithChildren from "../Components/PageWithChildren";
+} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from 'react';
+import PageWithChildren from '../components/PageWithChildren';
 
 const SkillItem: React.FC<{ icon: any; text: string }> = ({ icon, text }) => {
   return (
@@ -38,20 +42,24 @@ const SkillsGrid: React.FC<{ skills: { icon: any; text: string }[] }> = ({
 
 const SkillsPage: React.FC = () => {
   const frontEndSkills = [
-    { icon: faReact, text: "React" },
-    { icon: faJs, text: "JavaScript" },
-    { icon: faFileCode, text: "TypeScript" },
-    { icon: faCodeBranch, text: "Redux" },
-    { icon: faSass, text: "SCSS" },
-    { icon: faPalette, text: "Material UI" },
-    { icon: faVial, text: "Jest" },
+    { icon: faHtml5, text: 'Html' },
+    { icon: faCss, text: 'Css' },
+    { icon: faReact, text: 'React' },
+    { icon: faJs, text: 'JavaScript' },
+    { icon: faFileCode, text: 'TypeScript' },
+    { icon: faSass, text: 'SCSS' },
+    { icon: faPalette, text: 'Material UI' },
+    { icon: faVial, text: 'Jest' },
   ];
 
   const backEndSkills = [
-    { icon: faPython, text: "Python" },
-    { icon: faServer, text: "Django" },
-    { icon: faDatabase, text: "SQL" },
-    { icon: faDatabase, text: "Postgres" },
+    { icon: faPython, text: 'Python' },
+    { icon: faJava, text: 'Java' },
+    { icon: faC, text: 'C' },
+    { icon: faCartPlus, text: 'C++' },
+    { icon: faServer, text: 'Django' },
+    { icon: faDatabase, text: 'SQL' },
+    { icon: faDatabase, text: 'Postgres' },
   ];
 
   return (

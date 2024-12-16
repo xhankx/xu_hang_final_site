@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Footer: React.FC = () => {
   return (
@@ -6,10 +6,10 @@ const Footer: React.FC = () => {
       <div className="footer-content">
         <div className="left-content">
           <h3>Contact Information</h3>
-          <p>Email: supriyathukral@hotmail.com</p>
+          <p>Email: hxu7@academic.rrc.ca</p>
         </div>
         <div className="right-content">
-          <p>Made with ❤️ by Supriya Thukral</p>
+          <p>Made by Hank Xu</p>
         </div>
       </div>
     </footer>
