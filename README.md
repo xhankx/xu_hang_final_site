@@ -23,7 +23,7 @@ docker build -t xu_hang_coding_assignment14 .
 ### 2. Run the Docker Container:
 After building the Docker image, run this command to start the container:
 
-docker run -d -p 5575 --name xu_hang_coding_assignment14 xu_hang_coding_assignment14
+docker run -d -p 5575:3000 --name xu_hang_coding_assignment14 xu_hang_coding_assignment14
 
 ### 3. Open your web browser and go to:
 
