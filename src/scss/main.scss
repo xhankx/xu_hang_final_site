@@ -85,6 +85,62 @@ h4 {
     }
   }
 }
+.footer-container {
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px 10%;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #ddd;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin: 5px 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #333; /* Black/Grey color */
+  font-weight: normal; /* Reset bold if needed */
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+  color: #666; /* Slightly lighter grey on hover */
+  text-decoration: underline; /* Underline on hover for better clarity */
+}
+
+
+.footer-container p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
 
 // Back to top button styles
 .back-to-top-button {
