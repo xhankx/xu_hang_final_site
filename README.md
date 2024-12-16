@@ -8,6 +8,8 @@ This guide will show you how to build and run the web application on
 ## Prerequisites
 - [Docker](https://www.docker.com/) must be installed on your system.
 - Clone this repository to your local machine.
+    
+    https://github.com/xhankx/xu_hang_final_site.git
 
 ---
 
