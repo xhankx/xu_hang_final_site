@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
 import { pagesContent } from './PagesContent';
-import Footer from '../Components/Footer';
-import BackToTopButton from '../Components/BackToTop';
+import Footer from '../components/Footer';
+import BackToTopButton from '../components/BackToTop';
 
 const SiteContent: React.FC = () => {
   const location = useLocation();

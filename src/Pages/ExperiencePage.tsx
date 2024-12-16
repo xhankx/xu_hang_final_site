@@ -1,9 +1,9 @@
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import React from 'react';
 import workLogo from '../Assets/Images/work.png';
-import CardComponent from '../Components/CardRow';
-import { ImageProps } from '../Components/Page';
-import PageWithChildren from '../Components/PageWithChildren';
+import CardComponent from '../components/CardRow';
+import { ImageProps } from '../components/Page';
+import PageWithChildren from '../components/PageWithChildren';
 
 const ExperiencePage: React.FC = () => {
   const workLogoProps: ImageProps = {

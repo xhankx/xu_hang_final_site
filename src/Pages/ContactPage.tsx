@@ -1,6 +1,6 @@
 import React from 'react';
-import PageWithChildren from '../Components/PageWithChildren';
-import ContactForm from '../Components/ContactForm';
+import PageWithChildren from '../components/PageWithChildren';
+import ContactForm from '../components/ContactForm';
 
 const ContactPage: React.FC = () => {
   return (

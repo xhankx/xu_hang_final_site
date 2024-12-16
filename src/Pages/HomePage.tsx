@@ -1,8 +1,8 @@
 import React from 'react';
 import headshot from '../Assets/Images/hankxu.png';
-import CardComponent from '../Components/CardRow';
-import { ImageProps } from '../Components/Page';
-import PageWithChildren from '../Components/PageWithChildren';
+import CardComponent from '../components/CardRow';
+import { ImageProps } from '../components/Page';
+import PageWithChildren from '../components/PageWithChildren';
 import useWindowSize from '../helpers';
 
 const HomePage: React.FC = () => {
