@@ -27,6 +27,13 @@ const projectsData = [
       'This project is an open-source website portfolio template that allows users to easily create their own portfolio websites. It is a work-in-progress (WIP) and is built using React, TypeScript, and SCSS. The goal of this project is to provide developers with a customizable and modern template to showcase their skills and projects.',
     badge: 'WIP',
   },
+  {
+    icon: faLaptopCode,
+    title: 'Content Management System (CMS) - Food Hub',
+    link: 'http://hankxu5.liveblog365.com/',
+    description:
+      'I built this CMS using HTML5, CSS, JavaScript, PHP, and MySQL to create a responsive and user-friendly design. Forms include inline validation with JavaScript, and a consistent layout features a shared header, navigation bar, and footer. The project is hosted online, making it accessible to everyone.',
+  },
 ];
 
 const ProjectsPage: React.FC = () => {
