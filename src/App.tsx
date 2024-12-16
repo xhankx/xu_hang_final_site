@@ -1,6 +1,6 @@
 import { BrowserRouter as Router } from 'react-router-dom';
-import MobileNavigation from './Components/Mobile/MobileNavigation';
-import TopNav from './Components/TopNav';
+import MobileNavigation from './components/Mobile/MobileNavigation';
+import TopNav from './components/TopNav';
 import SiteContent from './Pages/SiteContent';
 import useWindowSize from './helpers';
 // eslint-disable-next-line
