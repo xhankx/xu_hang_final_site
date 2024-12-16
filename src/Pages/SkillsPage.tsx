@@ -57,7 +57,6 @@ const SkillsPage: React.FC = () => {
     { icon: faJava, text: 'Java' },
     { icon: faC, text: 'C' },
     { icon: faCartPlus, text: 'C++' },
-    { icon: faServer, text: 'Django' },
     { icon: faDatabase, text: 'SQL' },
     { icon: faDatabase, text: 'Postgres' },
   ];
