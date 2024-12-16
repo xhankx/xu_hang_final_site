@@ -49,7 +49,6 @@ interface PageProps {
  */
 const Page: React.FC<PageProps> = ({
   title,
-  content,
   className,
   image,
   children,

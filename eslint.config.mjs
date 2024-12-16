@@ -2,40 +2,36 @@ import globals from 'globals';
 import pluginJs from '@eslint/js';
 import tseslint from 'typescript-eslint';
 import pluginReact from 'eslint-plugin-react';
+import prettierConfig from 'eslint-config-prettier';
 
 export default [
   {
-    // Specify the files to lint
     files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'],
-
-    // Set global browser environment
     languageOptions: {
       globals: globals.browser,
+      parser: tseslint.parser,
+      parserOptions: {
+        ecmaVersion: 'latest',
+        sourceType: 'module',
+        jest: true, // Allow Jest global variables like 'test' and 'expect'
+        ecmaFeatures: { jsx: true },
+      },
     },
-
-    // Include necessary plugins
     plugins: {
-      js: pluginJs,           // JavaScript rules
-      react: pluginReact,     // React-specific rules
+      js: pluginJs,
+      react: pluginReact,
     },
-
-    // Extend configurations for Prettier
-    extends: [
-      'plugin:react/recommended',
-      'plugin:@typescript-eslint/recommended',
-      'prettier', // Ensures compatibility with Prettier
-    ],
-
-    // Define ESLint rules
+    settings: {
+      react: {
+        version: 'detect', // Automatically detect the React version
+      },
+    },
     rules: {
-      ...pluginJs.configs.recommended.rules,           // JavaScript recommended rules
-      ...tseslint.configs.recommended.rules,           // TypeScript recommended rules
-      ...pluginReact.configs.flat.recommended.rules,   // React-specific rules
-
-      // Example React rule
-      'react/display-name': 'warn',
-
-      // Other custom rules
+      ...pluginJs.configs.recommended.rules,
+      ...tseslint.configs.recommended.rules,
+      ...pluginReact.configs.flat.recommended.rules,
+      ...prettierConfig.rules,
+      'react/react-in-jsx-scope': 'off',
     },
   },
 ];

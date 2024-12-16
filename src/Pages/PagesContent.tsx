@@ -3,6 +3,8 @@ import ExperiencePage from './ExperiencePage';
 import HomePage from './HomePage';
 import ProjectsPage from './ProjectsPage';
 import SkillsPage from './SkillsPage';
+import React from 'react';
+
 
 export const pagesContent: {
   [key: string]: {
