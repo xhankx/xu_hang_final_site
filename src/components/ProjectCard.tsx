@@ -47,11 +47,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   // Function to bold specific keywords in the description
   const boldDescription = () => {
     const words = description.split(' ');
-    return words.map((word) => {
+    return words.map((word, index) => {
       const isKeyword = boldKeywords.some((keyword) =>
         word.toLowerCase().includes(keyword.toLowerCase()),
       );
-      return isKeyword ? <b>{word} </b> : word + ' ';
+      return isKeyword ? (
+        <b key={index}>{word} </b> // Add a unique key for bold words
+      ) : (
+        <React.Fragment key={index}>{word} </React.Fragment> // Ensure all elements have a key
+      );
     });
   };
 
@@ -59,32 +63,30 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     <Card className="project custom-card-width">
       <CardHeader
         title={
-          <>
-            <div className="header-content">
-              {/* Icon */}
-              <FontAwesomeIcon icon={icon} />
+          <div className="header-content">
+            {/* Icon */}
+            <FontAwesomeIcon icon={icon} />
 
-              {/* Title and Badge */}
-              <div className="title-wrapper">
-                <span className="title">
-                  {title}
-                  {/* Optional Badge */}
-                  {badge && (
-                    <Badge
-                      color="primary"
-                      className="badge"
-                      badgeContent={badge}
-                    ></Badge>
-                  )}
-                </span>
+            {/* Title and Badge */}
+            <div className="title-wrapper">
+              <span className="title">
+                {title}
+                {/* Optional Badge */}
+                {badge && (
+                  <Badge
+                    color="primary"
+                    className="badge"
+                    badgeContent={badge}
+                  ></Badge>
+                )}
+              </span>
 
-                {/* Link to Project */}
-                <a href={link} target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faLink} className="fa-link" />
-                </a>
-              </div>
+              {/* Link to Project */}
+              <a href={link} target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faLink} className="fa-link" />
+              </a>
             </div>
-          </>
+          </div>
         }
       />
 
