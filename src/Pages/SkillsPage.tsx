@@ -13,7 +13,6 @@ import {
   faDatabase,
   faFileCode,
   faPalette,
-  faServer,
   faVial,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
